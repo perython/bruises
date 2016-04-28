@@ -1,0 +1,35 @@
+<div class="sidebar-container">
+  <div class="sidebar-header">
+    <div class="brand">
+      <div class="logo">
+        <span class="l l1"></span>
+        <span class="l l2"></span>
+        <span class="l l3"></span>
+        <span class="l l4"></span>
+        <span class="l l5"></span>
+      </div>
+      Bruises
+    </div>
+  </div>
+  <nav class="menu">
+    <ul class="nav metismenu" id="sidebar-menu">
+      {{#each items}}
+        <li {{#if active}}class="active"{{/if}}>
+          <a href="#{{path}}">
+            <i class="fa {{iconClass}}"></i> {{name}}
+            {{#if children}}
+              <i class="fa arrow"></i>
+            {{/if}}
+          </a>
+          {{#if children}}
+            <ul class="collapse">
+              {{#each children}}
+                <li> <a href="#{{path}}">{{name}}</a> </li>
+              {{/each}}
+            </ul>
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+  </nav>
+</div>

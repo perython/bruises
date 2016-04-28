@@ -1,0 +1,92 @@
+<div class="modal-header">
+  <button type="button" class="close" aria-hidden="true">&times;</button>
+  <h4 class="modal-title">
+    {{name}}
+    {{#if external_urls.spotify}}
+      <a href="{{external_urls.spotify}}" target="_blank">
+        <i class="fa fa-external-link"></i>
+      </a>
+    {{/if}}
+  </h4>
+</div>
+
+<div class="modal-body">
+  <div class="row">
+    <div class="col-md-7">
+      <div class="artist-wrapper">
+        <img alt="image" src="{{imageUrl}}">
+        <div class="artist-info">
+          <div class="popularity">Popularity: {{popularity}}</div>
+          <div class="genres">
+            Genres:
+            {{#if genres}}
+              {{#each genres}}
+                <span class="label label-info">{{this}}</span>
+              {{/each}}
+            {{else}}
+              no data
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <ul class="nav nav-tabs nav-tabs-bordered">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" data-target="#top-tracks" aria-controls="top-tracks" data-toggle="tab" role="tab" aria-expanded="true">Top Tracks</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-target="#albums" aria-controls="profile" data-toggle="tab" role="tab" aria-expanded="false">Albums</a>
+        </li>
+      </ul>
+      <div class="tab-content tabs-bordered">
+        <div class="tab-pane fade active in" id="top-tracks" aria-expanded="true">
+          <table class="table">
+            <tr>
+              <th>Name</th>
+              <th></th>
+            </tr>
+            {{#each top_tracks}}
+              <tr>
+                <td>{{name}}</td>
+                <td></td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+        <div class="tab-pane fade" id="albums" aria-expanded="false">
+          <table class="table">
+            <tr>
+              <th>Name</th>
+              <th></th>
+            </tr>
+            {{#each albums}}
+              <tr>
+                <td>{{name}}</td>
+                <td></td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row m-t-md">
+    <div class="col-md-12">
+      <h5>Related artists</h5>
+      <div class="related-artists-wrapper">
+        <div class="related-artists">
+          {{#each relatedArtists}}
+            <div class="related-artist" data-id="{{id}}">
+              <img src="{{url}}" alt="" title="{{name}}">
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-default">Close</button>
+</div>

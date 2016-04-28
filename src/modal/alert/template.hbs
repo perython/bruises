@@ -1,0 +1,16 @@
+<div class="modal-header">
+  <button type="button" class="close" aria-hidden="true">&times;</button>
+  <h4 class="modal-title">{{title}}</h4>
+</div>
+
+<div class="modal-body">
+  {{#if isCode}}
+    <pre>{{text}}</pre>
+  {{else}}
+    <p>{{text}}</p>
+  {{/if}}
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary">OK</button>
+</div>

@@ -1,0 +1,39 @@
+<div class="modal-header">
+  <button type="button" class="close" aria-hidden="true">&times;</button>
+  <h4 class="modal-title">
+    {{display_name}}
+    {{#if external_urls.spotify}}
+      <a href="{{external_urls.spotify}}" target="_blank">
+        <i class="fa fa-external-link"></i>
+      </a>
+    {{/if}}
+  </h4>
+</div>
+
+<div class="modal-body">
+  <div class="row">
+    <div class="col-md-12">
+      {{#each images}}
+        <img src="{{url}}" />
+      {{/each}}
+    </div>
+  </div>
+  <div class="row m-t-md">
+    <div class="col-md-12">
+      <h5>Followed artists</h5>
+      <div class="followed-artists-wrapper">
+        <div class="followed-artists">
+          {{#each followedArtists}}
+            <div class="followed-artist" data-id="{{id}}">
+              <img src="{{url}}" alt="" title="{{name}}">
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-default">Close</button>
+</div>

@@ -1,0 +1,145 @@
+.header .header-block-nav .profile .img {
+  overflow: hidden;
+
+  img {
+    height: 100%;
+  }
+}
+
+.top-artists {
+  .top-artists-list {
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .top-artist {
+      position: relative;
+      overflow: hidden;
+      width: 300px;
+      height: 200px;
+      float: left;
+      margin: 0 5px 5px 0;
+
+      img {
+        width: 100%;
+      }
+
+      .name {
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding: 5px;
+        opacity: 0.7;
+        background: lightgray;
+      }
+
+      &:hover {
+        .name {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+.artist-modal {
+  .artist-wrapper {
+    position: relative;
+    max-height: 600px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+
+    .artist-info {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding: 10px;
+      background: lightgray;
+      opacity: 0.7;
+
+      .popularity {}
+
+      .genres {
+        span {
+        }
+      }
+    }
+  }
+
+  .tab-pane {
+    table {
+      tbody {
+        height: 532px;
+        overflow: auto;
+      }
+
+      thead > tr, tbody {
+        display:block;
+      }
+    }
+  }
+
+  .related-artists-wrapper {
+    overflow: hidden;
+    height: 135px;
+    overflow-x: scroll;
+
+    .related-artists {
+      overflow: hidden;
+
+      .related-artist {
+        position: relative;
+        overflow: hidden;
+        width: 120px;
+        height: 120px;
+        float: left;
+        margin: 0 5px 0;
+
+        &:hover {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.profile-modal {
+  .followed-artists-wrapper {
+    overflow: hidden;
+    height: 135px;
+    overflow-x: scroll;
+
+    .followed-artists {
+      overflow: hidden;
+
+      .followed-artist {
+        position: relative;
+        overflow: hidden;
+        width: 120px;
+        height: 120px;
+        float: left;
+        margin: 0 5px 0;
+
+        &:hover {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

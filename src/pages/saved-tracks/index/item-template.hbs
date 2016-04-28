@@ -1,0 +1,16 @@
+<td>{{index}}</td>
+<td>{{name}}</td>
+<td>
+  {{#each artists}}
+    <a href="#" class="info" data-id="{{id}}">{{name}}</a>
+  {{/each}}
+</td>
+<td>
+  {{album.name}}
+  <a href="{{album.external_urls.spotify}}" target="_blank">
+    <i class="fa fa-external-link"></i>
+  </a>
+</td>
+<td>{{duration}}</td>
+<td>{{popularity}}</td>
+<td></td>

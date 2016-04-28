@@ -1,0 +1,12 @@
+.idea/
+node_modules/
+dist/
+*.iml
+webpack-assets.json
+webpack-stats.json
+npm-debug.log
+server_config.js
+static
+*.tar.gz
+process.json
+process.yml
