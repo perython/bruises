@@ -10,3 +10,4 @@ static
 *.tar.gz
 process.json
 process.yml
+.gitconfig
