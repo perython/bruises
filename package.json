@@ -24,7 +24,7 @@
     "backbone.radio": "^1.0.2",
     "backbone.service": "^0.5.0",
     "backbone.syphon": "^0.6.3",
-    "bootstrap": "4.0.0-alpha.2",
+    "bootstrap": "^4.0.0",
     "cookie-parser": "^1.4.1",
     "font-awesome": "^4.4.0",
     "handlebars": "^4.0.5",
