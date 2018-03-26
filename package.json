@@ -33,6 +33,7 @@
     "lodash": "^3.10.1",
     "metismenu": "^2.5.0",
     "moment": "^2.10.6",
+    "popper.js": "^1.14.1",
     "querystring": "^0.2.0",
     "request": "^2.72.0",
     "sortablejs": "^1.4.2",
